@@ -11,7 +11,7 @@ msg = "Hello World!"
 def index():
     output = request.args.get('output')
     if not output:
-        output = 
+        output = PLAIN
     return get_formatted(msg, moje_imie,
                          output.lower())
 
